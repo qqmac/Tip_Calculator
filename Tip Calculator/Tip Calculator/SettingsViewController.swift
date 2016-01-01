@@ -16,6 +16,8 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        // display the current tip value
         let percentage = NSUserDefaults.standardUserDefaults()
         let tipVal = percentage.doubleForKey("current_percentage")
         var tip = tipVal * 100
@@ -29,39 +31,22 @@ class SettingsViewController: UIViewController {
     }
     
     @IBAction func onEdit(sender: AnyObject) {
-        //let percentage = NSUserDefaults.standardUserDefaults()
-        //let tipVal = percentage.doubleForKey("current_percentage")
-        //var sTip = String(Int(tipVal))
         
+        // take the input as a double integer and convert it to decimals
         var temp = NSString(string: customLabel.text!).doubleValue
         var custom = temp * 0.01
         
+        // update the tip value
         let percentage = NSUserDefaults.standardUserDefaults()
         percentage.setDouble((custom), forKey: "current_percentage")
         percentage.synchronize()
         
+        // update the bool to true
         let update = NSUserDefaults.standardUserDefaults()
         update.setBool(true, forKey: "checker_bool")
         update.synchronize()
         
-        //var custom1 = tipVal * 0.01
-        
-        //if tipVal == temp {
-            //let defaults = NSUserDefaults.standardUserDefaults()
-            //defaults.setDouble((custom1), forKey: "default_tip_percentage")
-          //  defaults.synchronize()
-        //}
-        //else {
-            //let defaults = NSUserDefaults.standardUserDefaults()
-            //defaults.setDouble((custom), forKey: "default_tip_percentage")
-          //  defaults.synchronize()
-        //}
-        
-       //println("custom: \(custom)")
-        //println("custom1: \(custom1)")
-        //println("custom: \(custom)")
-        //var checker = true
-        
+       
         
     }
     

@@ -22,6 +22,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.title = "Tip Calculator"
 
+        // default view at start up
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
         tipPercent.text = "0%"
@@ -35,6 +36,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // if segment is pressed. test failed
     @IBAction func touchUp(sender: AnyObject) {
         let update = NSUserDefaults.standardUserDefaults()
         update.setBool(false, forKey: "checker_bool")
@@ -43,7 +45,7 @@ class ViewController: UIViewController {
         println("pressed")
     }
     
-
+    // if segment is pressed. test failed
     @IBAction func touchDown(sender: AnyObject) {
         let update = NSUserDefaults.standardUserDefaults()
         update.setBool(false, forKey: "checker_bool")
@@ -53,21 +55,17 @@ class ViewController: UIViewController {
     }
     
     @IBAction func onEditingChanged(sender: AnyObject) {
+        // array of default values
         var tipPercentages = [0.18, 0.2, 0.22]
         
-        
-        
+        // selected default value
         var tipPercentage = tipPercentages[tipControl.selectedSegmentIndex]
         
-        
-        
-        
-        
+        // get bool
         let update = NSUserDefaults.standardUserDefaults()
         let update2 = update.boolForKey("checker_bool")
         
-        
-        
+        // only execute if bool is false
         if !update2 {
             //transfer percentage var from controller to setting
             let percentage = NSUserDefaults.standardUserDefaults()
@@ -75,27 +73,20 @@ class ViewController: UIViewController {
             percentage.synchronize()
             println("test: \(tipControl.selectedSegmentIndex) val: \(tipPercentage)")
         }
-        //var temp1 = tipPercentage
-        //var tipp = tipPercentage * 100
         
+        // get the tip value
         let percentage = NSUserDefaults.standardUserDefaults()
         let tipValue = percentage.doubleForKey("current_percentage")
         
-        var currentTip = tipValue * 100
+        // get text field for bill amount
         var billAmount = NSString(string: billField.text!).doubleValue
         
-        
-        // get the changed percentage value
-        
-        
-        //var tipPe = tipPercentages[tipControl.selectedSegmentIndex]
-        
-        
-       
-    
+        // get tip and total amount
+        var currentTip = tipValue * 100
         var tip = billAmount * tipValue
         var total = billAmount + tip
         
+        // display and convert format
         tipLabel.text = "$\(tip)"
         totalLabel.text = "$\(total)"
         
@@ -103,9 +94,6 @@ class ViewController: UIViewController {
         totalLabel.text = String(format: "$%.2f", total)
         tipPercent.text = "\(currentTip)"
         
-        //let update = NSUserDefaults.standardUserDefaults()
-        //update.setBool(false, forKey: "checker_bool")
-        //update.synchronize()
     }
     
     @IBAction func onTap(sender: AnyObject) {
