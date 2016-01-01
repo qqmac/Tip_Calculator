@@ -13,6 +13,7 @@
 		283E900F1C350CAA004A1514 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283E900E1C350CAA004A1514 /* Images.xcassets */; };
 		283E90121C350CAA004A1514 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283E90101C350CAA004A1514 /* LaunchScreen.xib */; };
 		283E901E1C350CAB004A1514 /* Tip_CalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E901D1C350CAB004A1514 /* Tip_CalculatorTests.swift */; };
+		283E90281C353CFC004A1514 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283E90271C353CFC004A1514 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		283E90171C350CAB004A1514 /* Tip CalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tip CalculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		283E901C1C350CAB004A1514 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283E901D1C350CAB004A1514 /* Tip_CalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tip_CalculatorTests.swift; sourceTree = "<group>"; };
+		283E90271C353CFC004A1514 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				283E90071C350CAA004A1514 /* AppDelegate.swift */,
 				283E90091C350CAA004A1514 /* ViewController.swift */,
 				283E900B1C350CAA004A1514 /* Main.storyboard */,
+				283E90271C353CFC004A1514 /* SettingsViewController.swift */,
 				283E900E1C350CAA004A1514 /* Images.xcassets */,
 				283E90101C350CAA004A1514 /* LaunchScreen.xib */,
 				283E90051C350CA9004A1514 /* Supporting Files */,
@@ -214,6 +217,7 @@
 			files = (
 				283E900A1C350CAA004A1514 /* ViewController.swift in Sources */,
 				283E90081C350CAA004A1514 /* AppDelegate.swift in Sources */,
+				283E90281C353CFC004A1514 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
