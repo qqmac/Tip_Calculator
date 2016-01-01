@@ -6,7 +6,6 @@ Submitted by: Quyen Mac
 
 Time Spent: 11 hours total
 
-
 ## User Stories
 
 The following **required** functionality is complete:
@@ -23,8 +22,12 @@ The following **additional** features are implemented:
 Here’s a walkthrough of my code:
 <img src=‘i.imgur.com/g9BPG8A.gif' title=‘Video Walkthrough’ width=‘’ alt=‘Video Walkthrough’ />
 
+i.imgur.com/g9BPG8A.gif
+
 Here’s the debugging process with errors and bugs noted in the Notes below:
 <img src=‘i.imgur.com/B9zAnmo.gif' title=‘Debug’ width=‘’ alt=‘Debug’ />
+
+i.imgur.com/B9zAnmo.gif
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
