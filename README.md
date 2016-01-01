@@ -24,7 +24,9 @@ Here’s a walkthrough of my code:
 <img src=‘i.imgur.com/g9BPG8A.gif' title=‘Video Walkthrough’ width=‘’ alt=‘Video Walkthrough’ />
 
 Here’s the debugging process with errors and bugs noted in the Notes below:
-<img src=‘i.imgur.com/B9zAnmo.gif' title=‘Video Walkthrough’ width=‘’ alt=‘Video Walkthrough’ />
+<img src=‘i.imgur.com/B9zAnmo.gif' title=‘Debug’ width=‘’ alt=‘Debug’ />
+
+GIF created with [LiceCap](http://www.cockos.com/licecap/)
 
 ## Notes
 
